@@ -12,7 +12,8 @@ use JWTAuth;
 class HomeController extends Controller
 {
     use Helpers;
-    public function __construct() {
+
+    public function __construct(Request $request) {
         $this->middleware('auth');
     }
 

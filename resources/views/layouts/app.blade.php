@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="js/animate.css/animate.min.css">
         <link rel="stylesheet" type="text/css" href="js/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
         <link rel="stylesheet" type="text/css" href="js/checkbox3/dist/checkbox3.min.css">
-        <link rel="stylesheet" type="text/css" href="js/DataTables/media/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="js/datatables/media/css/jquery.dataTables.min.css">
         <link rel="stylesheet" type="text/css" href="js/datatables/media/css/dataTables.bootstrap.css">
         <link rel="stylesheet" type="text/css" href="js/select2/dist/css/select2.min.css">
         <!-- CSS App -->
@@ -196,8 +196,8 @@
         <script type="text/javascript" src="js/Chart.js/Chart.min.js"></script>
         <script type="text/javascript" src="js/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
         <script type="text/javascript" src="js/matchHeight/jquery.matchHeight-min.js"></script>
-        <script type="text/javascript" src="js/DataTables/media/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="js/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/datatables/media/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript" src="js/select2/dist/js/select2.full.min.js"></script>
         <script type="text/javascript" src="js/ace-builds/src/ace.js"></script>
         <script type="text/javascript" src="js/ace-builds/src/mode-html.js"></script>

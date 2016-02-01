@@ -2,10 +2,12 @@
 
 @section('content')
 
-
-        <table id="example" class="display" cellspacing="0" width="100%">
+<div class="card">
+    <div class="card-body">
+        <table id="devices" class="datatable table table-striped">
             <thead>
                 <tr>
+                    <th>Status</th>
                     <th>Hostname</th>
                     <th>OS</th>
                     <th>Status</th>
@@ -13,6 +15,7 @@
             </thead>
             <tfoot>
                 <tr>
+                    <th>Status</th>
                     <th>Hostname</th>
                     <th>OS</th>
                     <th>Status</th>
@@ -21,6 +24,7 @@
             <tbody>
                 @foreach ($devices as $device)
                 <tr>
+                    <td>{!! $device->visual_status !!}</td>
                     <td>{{ $device->hostname }}</td>
                     <td>{{ $device->os }}</td>
                     <td>{{ $device->status }}</td>
@@ -28,6 +32,6 @@
                 @endforeach
             </tbody>
         </table>
-
-
+    </div>
+</div>
 @endsection
