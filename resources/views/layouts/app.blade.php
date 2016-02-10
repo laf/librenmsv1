@@ -30,7 +30,7 @@
                                     <i class="fa fa-bars icon"></i>
                                 </button>
                                 <ol class="breadcrumb navbar-breadcrumb">
-                                    <li class="active">Dashboard</li>
+                                    <li class="active">@yield('title')</li>
                                 </ol>
                                 <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                                     <i class="fa fa-th icon"></i>
@@ -82,12 +82,12 @@
                                     </button>
                                 </div>
                                 <ul class="nav navbar-nav">
-                                    <li class="active">
+                                    <li>
                                         <a href="{{ url('/') }}">
                                             <span class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
                                         </a>
                                     </li>
-                                    <!--<li class="panel panel-default dropdown">
+                                    <li class="panel panel-default dropdown">
                                         <a data-toggle="collapse" href="#dropdown-overview">
                                             <span class="icon fa fa-desktop"></span><span class="title">Overview</span>
                                         </a>
@@ -140,7 +140,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>-->
+                                    </li>
                                     <li class="panel panel-default dropdown">
                                         <a data-toggle="collapse" href="#dropdown-devices">
                                             <span class="icon fa fa-server"></span><span class="title">Devices</span>
@@ -175,10 +175,12 @@
                         </nav>
                     </div>
                     <!-- Main Content -->
-                    <div class="container-fluid main-body">
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                @yield('content')
+                    <div class="container-fluid">
+                        <div class="side-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @yield('content')
+                                </div>
                             </div>
                         </div>
                     </div>
