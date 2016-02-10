@@ -24,6 +24,8 @@ class CreateUsersTable extends Migration {
 			$table->boolean('can_modify_passwd')->default(1);
 			$table->string('twofactor');
 			$table->integer('dashboard')->default(0);
+                        $table->rememberToken();
+                        $table->timestamps();
 		});
 	}
 

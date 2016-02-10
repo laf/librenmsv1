@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_DEFAULT', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,9 +46,21 @@ return [
 
     'connections' => [
 
+        'testing' => [
+            'driver'   => 'mysql',
+            'host'      => env('PHPUNIT_DB_HOST', '127.0.0.1'),
+            'database'  => env('PHPUNIT_DB_DATABASE', 'phpunit_librenms'),
+            'username'  => env('PHPUNIT_DB_USERNAME', 'travis'),
+            'password'  => env('PHPUNIT_DB_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => database_path('database.sqlite'),
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix'   => '',
         ],
 
